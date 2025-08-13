@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveArt AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>LiveArt AI</h1>
+        <p>Free AI Video, Image & Music Generator</p>
+    </header>
+
+    <main>
+        <section class="generator">
+            <h2>Generate Content</h2>
+            <textarea id="prompt" placeholder="Enter your prompt here..."></textarea>
+            <select id="type">
+                <option value="image">Image</option>
+                <option value="video">Video</option>
+                <option value="music">Music</option>
+            </select>
+            <button onclick="generate()">Generate</button>
+        </section>
+
+        <section id="output">
+            <!-- Generated content will appear here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 LiveArt AI. Free for everyone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
