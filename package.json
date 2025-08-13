@@ -1,19 +1,12 @@
 {
-  "name": "liveart-frontend",
+  "name": "liveartfrontend",
   "version": "1.0.0",
-  "description": "LiveArt AI frontend - Kling AI uslubidagi bepul AI video generator",
-  "main": "index.html",
+  "description": "LiveArt AI frontend va backend",
+  "main": "server.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "node server.js"
   },
-  "author": "Otabek",
-  "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.2",
-    "bootstrap": "^5.3.2"
-  },
-  "devDependencies": {
-    "parcel": "^2.9.3"
+    "express": "^4.18.2"
   }
 }
