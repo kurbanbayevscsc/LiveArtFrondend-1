@@ -1,16 +1,19 @@
-const express = require('express');
-const path = require('path');
+// server.js
+const express = require("express");
+const path = require("path");
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Static fayllarni ulash
+// Middleware statik fayllar uchun (frontend fayllar)
 app.use(express.static(path.join(__dirname)));
 
-// Bosh sahifa
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+// Asosiy route
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
+// Serverni ishga tushirish
 app.listen(PORT, () => {
-    console.log(Server ${PORT} portida ishlamoqda);
+  console.log(✅ Server ${PORT} portda ishlayapti);
 });
